@@ -46,7 +46,14 @@ namespace dotnetgrad
             return new Value(tanH, new List<Value>() { this }, Operation.TanH, child => 1 - Math.Pow(tanH, 2));
         }
 
-		public void Backword()
+        public Value Exp()
+        {
+            var n = Data;
+            var exp = Math.Exp(n);
+            return new Value(exp, new List<Value>() { this }, Operation.Exp, child => exp);
+        }
+
+        public void Backword()
 		{
             var topologicallyOrderedListOfNodes = orderNodesTopologically(this, new HashSet<Value>(), new List<Value>());
             foreach (var node in topologicallyOrderedListOfNodes)

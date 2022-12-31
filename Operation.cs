@@ -5,6 +5,7 @@
         None,
         Add,
         Multiply,
-        TanH
+        TanH,
+        Exp
     }
 }
