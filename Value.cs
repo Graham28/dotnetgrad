@@ -39,6 +39,12 @@ namespace dotnetgrad
                 child => thisData != child.Data ? thisData : otherValue.Data);
         }
 
+        public Value Devide(Value otherValue)
+        {
+            var thisData = Data;
+            return this.Multiply(otherValue.Pow(new Value(-1)));
+        }
+
         public Value TanH()
         {
 			var n = Data;
@@ -82,6 +88,13 @@ namespace dotnetgrad
             returnList.Add(node);
             returnList.Reverse(); 
             return returnList;
+        }
+
+        public Value Pow(Value secondValue)
+        {
+            var n = Data;
+            var exp = Math.Pow(n, secondValue.Data);
+            return new Value(exp, new List<Value>() { this }, Operation.Exp, child => secondValue.Data * (Math.Pow(n, secondValue.Data -1)));
         }
     }
 }
