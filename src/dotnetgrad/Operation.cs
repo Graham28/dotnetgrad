@@ -6,6 +6,7 @@
         Add,
         Multiply,
         TanH,
-        Exp
+        Exp,
+        Pow
     }
 }

@@ -30,6 +30,11 @@ namespace dotnetgrad
 			return new Value(Data + otherValue.Data, new List<Value>() { this, otherValue }, Operation.Add, child => 1);
         }
 
+        public Value Subtract(Value otherValue)
+        {
+            return new Value(Data - otherValue.Data, new List<Value>() { this, otherValue }, Operation.Add, child => 1);
+        }
+
         public Value Multiply(Value otherValue)
         {
             var thisData = Data;
@@ -92,9 +97,14 @@ namespace dotnetgrad
 
         public Value Pow(Value secondValue)
         {
-            var n = Data;
-            var exp = Math.Pow(n, secondValue.Data);
-            return new Value(exp, new List<Value>() { this }, Operation.Exp, child => secondValue.Data * (Math.Pow(n, secondValue.Data -1)));
+            var exp = Math.Pow(Data, secondValue.Data);  
+            return new Value(exp, new List<Value>() { this, secondValue }, Operation.Pow, child =>
+            child == this ?
+                secondValue.Data * (Math.Pow(Data, secondValue.Data - 1))
+                :
+                Math.Pow(Data, secondValue.Data) * Math.Log(Data)
+
+            );
         }
     }
 }
