@@ -89,7 +89,6 @@ namespace dotnetgrad
 
         public void Backword()
 		{
-            //this.Gradient = 1.0;
             var topologicallyOrderedListOfNodes = orderNodesTopologically(this, new HashSet<Value>(), new List<Value>());
             topologicallyOrderedListOfNodes.Reverse();
             foreach (var node in topologicallyOrderedListOfNodes)
@@ -118,7 +117,6 @@ namespace dotnetgrad
                 }
                 returnList.Add(node);
             }
-            //returnList.Reverse(); 
             return returnList;
         }
     }
