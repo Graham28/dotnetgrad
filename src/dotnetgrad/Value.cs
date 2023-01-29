@@ -5,12 +5,11 @@ namespace dotnetgrad
 {
 	public class Value
 	{
-		public double Data { get; }
+		public double Data { get; set; }
 		public List<Value> Children { get; }
 		public Operation Operation { get; }
 		public double Gradient { get; set; }
         private Func<Value, double> _derivative;
-
 
         public Value(double data,
 			List<Value>? children = null,
@@ -118,6 +117,12 @@ namespace dotnetgrad
                 returnList.Add(node);
             }
             return returnList;
+        }
+
+        public void Reset()
+        {
+            Children.RemoveAll(child => child != null);
+            Gradient = 0.0;
         }
     }
 }
