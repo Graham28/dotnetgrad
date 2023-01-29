@@ -32,7 +32,13 @@ namespace dotnetgrad
 
         public Value Subtract(Value otherValue)
         {
-            return new Value(Data - otherValue.Data, new List<Value>() { this, otherValue }, Operation.Add, child => 1);
+            var thisData = this.Data;
+            return new Value(Data - otherValue.Data, new List<Value>() { this, otherValue }, Operation.Subtract, child =>
+                child.Data == thisData ?
+                    1
+                    :
+                    -1
+                );
         }
 
         public Value Multiply(Value otherValue)
@@ -83,7 +89,9 @@ namespace dotnetgrad
 
         public void Backword()
 		{
+            //this.Gradient = 1.0;
             var topologicallyOrderedListOfNodes = orderNodesTopologically(this, new HashSet<Value>(), new List<Value>());
+            topologicallyOrderedListOfNodes.Reverse();
             foreach (var node in topologicallyOrderedListOfNodes)
             {
                 node.SetChildGradients();
@@ -102,13 +110,15 @@ namespace dotnetgrad
         private List<Value> orderNodesTopologically(Value node, HashSet<Value> visited, List<Value> returnList)
         {
             if (!visited.Contains(node))
-                visited.Add(node); 
-            foreach (var child in node.Children)
             {
-                orderNodesTopologically(child, visited, returnList);
+                visited.Add(node);
+                foreach (var child in node.Children)
+                {
+                    orderNodesTopologically(child, visited, returnList);
+                }
+                returnList.Add(node);
             }
-            returnList.Add(node);
-            returnList.Reverse(); 
+            //returnList.Reverse(); 
             return returnList;
         }
     }

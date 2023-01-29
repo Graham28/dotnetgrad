@@ -39,7 +39,7 @@ namespace dotnetgrad.tests
 
             //Assert
             Assert.That(firstValue.Gradient.Equals(0.5));
-            Assert.That(secondValue.Gradient.Equals(0.5));
+            Assert.That(secondValue.Gradient.Equals(-0.5));
         }
 
         [Test]
@@ -129,6 +129,27 @@ namespace dotnetgrad.tests
 
             //Assert
             Assert.That(firstValue.Gradient, Is.EqualTo(0.7864).Within(0.0001));
+        }
+
+        [Test]
+        public void Backword_TanH_BrokenDown()
+        {
+            //Arrange
+            var x = new Value(0.5);
+            var minus1 = new Value(-1.0);
+            var minusX = x.Multiply(minus1);
+            var expX = x.Exp();
+            var expMinusX = minusX.Exp();
+            var top = expX.Subtract(expMinusX);
+            var bottom = expX.Add(expMinusX);
+            var tanH = top.DevideBy(bottom);
+            tanH.Gradient = 1.0;
+
+            //Act
+            tanH.Backword();
+
+            //Assert
+            Assert.That(x.Gradient, Is.EqualTo(0.7864).Within(0.0001));
         }
     }
 }

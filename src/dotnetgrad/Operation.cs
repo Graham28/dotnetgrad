@@ -4,6 +4,7 @@
     {
         None,
         Add,
+        Subtract,
         Multiply,
         Devide,
         TanH,
