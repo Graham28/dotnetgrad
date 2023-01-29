@@ -44,10 +44,27 @@ namespace dotnetgrad
                 child => thisData != child.Data ? thisData : otherValue.Data);
         }
 
-        public Value Devide(Value otherValue)
+        public Value Pow(Value otherValue)
         {
             var thisData = Data;
-            return this.Multiply(otherValue.Pow(new Value(-1)));
+            var exp = Math.Pow(Data, otherValue.Data);
+            return new Value(exp, new List<Value>() { this, otherValue }, Operation.Pow, child =>
+            child.Data == thisData ?
+                otherValue.Data * (Math.Pow(Data, otherValue.Data - 1))
+                :
+                Math.Pow(Data, otherValue.Data) * Math.Log(Data)
+            );
+        }
+
+        public Value DevideBy(Value otherValue)
+        {
+            var thisData = Data;
+            return new Value(thisData/otherValue.Data, new List<Value>() { this, otherValue }, Operation.Devide, child =>
+            child.Data == thisData ?
+                1 / otherValue.Data
+                :
+                -thisData / Math.Pow(otherValue.Data, 2)
+            );
         }
 
         public Value TanH()
@@ -93,18 +110,6 @@ namespace dotnetgrad
             returnList.Add(node);
             returnList.Reverse(); 
             return returnList;
-        }
-
-        public Value Pow(Value secondValue)
-        {
-            var exp = Math.Pow(Data, secondValue.Data);  
-            return new Value(exp, new List<Value>() { this, secondValue }, Operation.Pow, child =>
-            child == this ?
-                secondValue.Data * (Math.Pow(Data, secondValue.Data - 1))
-                :
-                Math.Pow(Data, secondValue.Data) * Math.Log(Data)
-
-            );
         }
     }
 }

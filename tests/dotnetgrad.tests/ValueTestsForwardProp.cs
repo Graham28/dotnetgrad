@@ -72,7 +72,7 @@ namespace dotnetgrad.tests
             var secondValue = new Value(2.0);
 
             //Act
-            var firstValueDevidedBySecondValue = firstValue.Devide(secondValue);
+            var firstValueDevidedBySecondValue = firstValue.DevideBy(secondValue);
             //Assert
             Assert.That(firstValueDevidedBySecondValue.Data, Is.EqualTo(3.0));
         }

@@ -84,7 +84,7 @@ namespace dotnetgrad.tests
             //Arrange
             var firstValue = new Value(6.0);
             var secondValue = new Value(2.0);
-            var firstToThePowerSecond = firstValue.Devide(secondValue);
+            var firstToThePowerSecond = firstValue.DevideBy(secondValue);
             firstToThePowerSecond.Gradient = 1.0;
 
             //Act

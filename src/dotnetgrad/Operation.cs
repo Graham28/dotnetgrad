@@ -5,6 +5,7 @@
         None,
         Add,
         Multiply,
+        Devide,
         TanH,
         Exp,
         Pow
