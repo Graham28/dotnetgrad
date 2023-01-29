@@ -59,6 +59,8 @@ namespace dotnetgrad.tests
             Assert.That(secondValue.Gradient.Equals(2.0));
         }
 
+
+
         [Test]
         public void Backword_Pow()
         {
@@ -94,18 +96,24 @@ namespace dotnetgrad.tests
         }
 
         [Test]
-        public void Backword_Exp()
+        public void Backword_MulitpleValues_Add_Multiply()
         {
             //Arrange
-            var firstValue = new Value(0.5);
-            var expOfFirstValue = firstValue.Exp();
-            expOfFirstValue.Gradient = 1.0;
-
+            var a = new Value(2.0);
+            var b = new Value(-3.0);
+            var e = a.Multiply(b);
+            var c = new Value(10.0);
+            var d = c.Add(e);
+            var f = new Value(-2.0);
+            var L = d.Multiply(f);
+            L.Gradient = 1.0;
             //Act
-            expOfFirstValue.Backword();
+            L.Backword();
 
             //Assert
-            Assert.That(firstValue.Gradient, Is.EqualTo(Math.Exp(0.5)).Within(0.0001));
+            Assert.That(a.Gradient, Is.EqualTo(6.0).Within(0.0001));
+            Assert.That(b.Gradient, Is.EqualTo(-4.0).Within(0.0001));
+
         }
 
         [Test]

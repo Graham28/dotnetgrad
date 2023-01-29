@@ -85,7 +85,7 @@ namespace dotnetgrad
         private List<Value> orderNodesTopologically(Value node, HashSet<Value> visited, List<Value> returnList)
         {
             if (!visited.Contains(node))
-                visited.Add(node);
+                visited.Add(node); 
             foreach (var child in node.Children)
             {
                 orderNodesTopologically(child, visited, returnList);
