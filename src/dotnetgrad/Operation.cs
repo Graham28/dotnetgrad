@@ -9,6 +9,7 @@
         Devide,
         TanH,
         Exp,
-        Pow
+        Pow,
+        ReLU
     }
 }

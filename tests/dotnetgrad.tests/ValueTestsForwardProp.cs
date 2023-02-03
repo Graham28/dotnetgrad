@@ -78,6 +78,21 @@ namespace dotnetgrad.tests
         }
 
         [Test]
+        public void ReLU()
+        {
+            //Arrange
+            var firstValue = new Value(6.0);
+            var secondValue = new Value(-2.0);
+
+            //Act
+            var firstValueRelu = firstValue.ReLU();
+            var secondValueRelu = secondValue.ReLU();
+            //Assert
+            Assert.That(firstValueRelu.Data, Is.EqualTo(firstValue.Data));
+            Assert.That(secondValueRelu.Data, Is.EqualTo(0));
+        }
+
+        [Test]
         public void Children()
         {
             //Arrange

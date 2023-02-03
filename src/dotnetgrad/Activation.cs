@@ -6,8 +6,8 @@ namespace dotnetgrad
 		Linear,
 		TanH,
 		Softmax,
-		Relu,
-		Lrelu
+		ReLU,
+		LreLU
 	}
 }
 

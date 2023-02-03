@@ -36,7 +36,10 @@ namespace dotnetgrad
                 case Activation.TanH:
                     outputValue = outputValue.TanH();
                     break;
-				case Activation.Linear:
+                case Activation.ReLU:
+                    outputValue = outputValue.ReLU();
+                    break;
+                case Activation.Linear:
                 default:
                     //Do nothing 
                     break;

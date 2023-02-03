@@ -117,6 +117,21 @@ namespace dotnetgrad.tests
         }
 
         [Test]
+        public void Backword_ReLU()
+        {
+            //Arrange
+            var firstValue = new Value(5);
+            var reluOfFirstValue = firstValue.ReLU();
+            reluOfFirstValue.Gradient = 1.0;
+            firstValue.Data = -1;
+            //Act
+            reluOfFirstValue.Backword();
+
+            //Assert
+            Assert.That(firstValue.Gradient, Is.EqualTo(0));
+        }
+
+        [Test]
         public void Backword_TanH()
         {
             //Arrange

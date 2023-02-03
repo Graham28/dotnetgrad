@@ -79,6 +79,13 @@ namespace dotnetgrad
             return new Value(tanH, new List<Value>() { this }, Operation.TanH, child => 1 - Math.Pow(tanH, 2));
         }
 
+        public Value ReLU()
+        {
+            var thisData = Data;
+            return new Value(thisData > 0 ? thisData : 0, new List<Value>() { this }, Operation.ReLU,
+                child => thisData > 0 ? 1 : 0);
+        }
+
         public Value Exp()
         {
             var n = Data;
