@@ -13,7 +13,7 @@ namespace dotnetgrad
 			Layers.Add(new Layer(numInputs, sizeOfHiddenLayers));
 			for (int i = 1; i < numHiddenLayers; i++)
 				Layers.Add(new Layer(sizeOfHiddenLayers, sizeOfHiddenLayers));
-			Layers.Add(new Layer(sizeOfHiddenLayers, numOutputs));
+			Layers.Add(new Layer(sizeOfHiddenLayers, numOutputs, Activation.Linear));
 			TrainingRate = 0.05;
 		}
 

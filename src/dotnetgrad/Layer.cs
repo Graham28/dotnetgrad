@@ -4,12 +4,14 @@ namespace dotnetgrad
 	public class Layer
 	{
 		public List<Neuron> Neurons { get; private set; }
+        private Activation _activation;
 
-		public Layer(int numInputs, int numOutputs)
+        public Layer(int numInputs, int numOutputs, Activation activation = Activation.TanH)
 		{
+			_activation = activation;
 			Neurons = new List<Neuron>();
 			for (int i = 0; i < numOutputs; i++)
-				Neurons.Add(new Neuron(numInputs));
+				Neurons.Add(new Neuron(numInputs, _activation));
 		}
 
 		public List<Value> ActivateLayer(List<Value> inputValues)

@@ -11,11 +11,11 @@ namespace dotnetgrad.tests
 		public void MultiLayerPerceptronTests_TrainBatch_ConvergesForSimpleDataset()
 		{
 			//Arrange
-			var target1 = -0.25;
+			var target1 = -1.25;
 			var input1 = new List<double>() { 0.1, 0.8, -0.7 };
             var target2 = 0.0;
             var input2 = new List<double>() { - 0.1, 1.0, 0.1 };
-            var target3 = 0.25;
+            var target3 = 6.25;
             var input3 = new List<double>() { -0.7, 0.1, 1.0 };
             var mlp = new MultiLayerPerceptron(3, 3, 5, 2);
 			var batch1 = new List<DataPoint>() {
@@ -32,7 +32,7 @@ namespace dotnetgrad.tests
             };
 
             //Act
-            for (int i = 0; i < 500; i++)
+            for (int i = 0; i < 100; i++)
             {
                 mlp.TrainBatch(batch2);
                 mlp.TrainBatch(batch1);

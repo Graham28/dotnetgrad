@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq.Expressions;
+
 namespace dotnetgrad
 {
 	public class Neuron
@@ -7,10 +9,12 @@ namespace dotnetgrad
         public Value Bias { get; private set; }
 		public List<Value> Weights { get; private set; }
 		public int NumberOfInputValues { get; init; }
+		private Activation _activation;
 
-		public Neuron(int numInputValues)
+		public Neuron(int numInputValues, Activation activation = Activation.TanH)
 		{
 			_random = new Random();
+			_activation = activation;
 			Bias = new Value(2*(_random.NextDouble() - 0.5));//[-1,1]
 			Weights = new List<Value>();
             NumberOfInputValues = numInputValues;
@@ -19,15 +23,25 @@ namespace dotnetgrad
 
 		public Value ActivateNeuron(List<Value> inputValues)
 		{
-			var sum = new Value(0.0);
+			var outputValue = new Value(0.0);
 			var i = 0;
 			foreach(var weight in Weights)
 			{
-				sum = sum.Add(weight.Multiply(inputValues[i]));
+				outputValue = outputValue.Add(weight.Multiply(inputValues[i]));
 				i++;
-			}
-			sum = sum.Add(Bias);
-			var outputValue = sum.TanH();
+            }
+			outputValue = outputValue.Add(Bias);
+            switch (_activation)
+            {
+                case Activation.TanH:
+                    outputValue = outputValue.TanH();
+                    break;
+				case Activation.Linear:
+                default:
+                    //Do nothing 
+                    break;
+            }
+            
 			return outputValue;
 		}
 		 
