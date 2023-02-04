@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq.Expressions;
+using dotnetgrad.Utilities;
 
 namespace dotnetgrad
 {
@@ -15,7 +16,7 @@ namespace dotnetgrad
 		{
 			_random = new Random();
 			_activation = activation;
-			Bias = new Value(0.0);//[-1,1]
+			Bias = new Value(0.0);
 			Weights = new List<Value>();
             NumberOfInputValues = numInputValues;
 			InitialiseWeights();
@@ -54,7 +55,7 @@ namespace dotnetgrad
 		private void InitialiseWeights()
 		{
             for (int i = 0; i < NumberOfInputValues; i++)
-                Weights.Add(new Value(2 * (_random.NextDouble() - 0.5)));//[-1,1]
+                Weights.Add(new Value(MathsHelpers.GetRandomDoubleWithNormalDistribution(0,1)));
         }
 
 		public List<Value> GetParameters()
