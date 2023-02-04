@@ -15,7 +15,7 @@ namespace dotnetgrad
 		{
 			_random = new Random();
 			_activation = activation;
-			Bias = new Value(2*(_random.NextDouble() - 0.5));//[-1,1]
+			Bias = new Value(0.0);//[-1,1]
 			Weights = new List<Value>();
             NumberOfInputValues = numInputValues;
 			InitialiseWeights();
@@ -38,6 +38,9 @@ namespace dotnetgrad
                     break;
                 case Activation.ReLU:
                     outputValue = outputValue.ReLU();
+                    break;
+                case Activation.lReLU:
+                    outputValue = outputValue.lReLU();
                     break;
                 case Activation.Linear:
                 default:

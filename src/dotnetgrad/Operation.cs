@@ -10,6 +10,7 @@
         TanH,
         Exp,
         Pow,
-        ReLU
+        ReLU,
+        lReLU
     }
 }

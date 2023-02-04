@@ -86,6 +86,13 @@ namespace dotnetgrad
                 child => thisData > 0 ? 1 : 0);
         }
 
+        public Value lReLU()
+        {
+            var thisData = Data;
+            return new Value(thisData > 0 ? thisData : 0.01 * thisData, new List<Value>() { this }, Operation.lReLU,
+                child => thisData > 0 ? 1 : 0.01);
+        }
+
         public Value Exp()
         {
             var n = Data;

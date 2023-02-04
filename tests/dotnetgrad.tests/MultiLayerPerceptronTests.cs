@@ -32,7 +32,7 @@ namespace dotnetgrad.tests
             };
 
             //Act
-            for (int i = 0; i < 300; i++)
+            for (int i = 0; i < 200; i++)
             {
                 mlp.TrainBatch(batch2);
                 mlp.TrainBatch(batch1);

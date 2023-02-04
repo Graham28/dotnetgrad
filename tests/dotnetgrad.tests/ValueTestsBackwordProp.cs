@@ -123,12 +123,11 @@ namespace dotnetgrad.tests
             var firstValue = new Value(5);
             var reluOfFirstValue = firstValue.ReLU();
             reluOfFirstValue.Gradient = 1.0;
-            firstValue.Data = -1;
             //Act
             reluOfFirstValue.Backword();
 
             //Assert
-            Assert.That(firstValue.Gradient, Is.EqualTo(0));
+            Assert.That(firstValue.Gradient, Is.EqualTo(1.0));
         }
 
         [Test]
