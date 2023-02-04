@@ -3,13 +3,13 @@ namespace dotnetgrad
 {
 	public class MultiLayerPerceptron
 	{
-		public List<Layer> Layers { get; private set; }
+		public List<ILayer> Layers { get; private set; }
 		public double TrainingRate { get; set; }
 
 		public MultiLayerPerceptron(
 			int numInputs, int numHiddenLayers, int sizeOfHiddenLayers, int numOutputs)
 		{
-			Layers = new List<Layer>();
+			Layers = new List<ILayer>();
 			Layers.Add(new Layer(numInputs, sizeOfHiddenLayers));
 			for (int i = 1; i < numHiddenLayers; i++)
 				Layers.Add(new Layer(sizeOfHiddenLayers, sizeOfHiddenLayers));
@@ -24,9 +24,8 @@ namespace dotnetgrad
 				inputsAsValues.Add(new Value(input));
 
 			var outputsOfPreviousLayer = inputsAsValues;
-			foreach (Layer layer in Layers)
+			foreach (var layer in Layers)
 				outputsOfPreviousLayer = layer.ActivateLayer(outputsOfPreviousLayer);
-
 			return outputsOfPreviousLayer;
 		}
 
