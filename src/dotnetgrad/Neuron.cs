@@ -1,26 +1,29 @@
 ﻿using System;
 using System.Linq.Expressions;
 using dotnetgrad.Utilities;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace dotnetgrad
 {
 	public class Neuron
 	{
-        private readonly Random _random;
-        public Value Bias { get; private set; }
-		public List<Value> Weights { get; private set; }
-		public int NumberOfInputValues { get; init; }
-		private Activation _activation;
+        public Value Bias { get; set; }
+		public List<Value> Weights { get; set; }
+		public int NumberOfInputValues { get; set; }
+        public Activation Activation;
 
 		public Neuron(int numInputValues, Activation activation = Activation.TanH)
 		{
-			_random = new Random();
-			_activation = activation;
+			Activation = activation;
 			Bias = new Value(0.0);
 			Weights = new List<Value>();
             NumberOfInputValues = numInputValues;
 			InitialiseWeights();
 		}
+		//For deserialisation
+        public Neuron()
+		{ }
 
 		public Value ActivateNeuron(List<Value> inputValues)
 		{
@@ -32,7 +35,7 @@ namespace dotnetgrad
 				i++;
             }
 			outputValue = outputValue.Add(Bias);
-            switch (_activation)
+            switch (Activation)
             {
                 case Activation.TanH:
                     outputValue = outputValue.TanH();

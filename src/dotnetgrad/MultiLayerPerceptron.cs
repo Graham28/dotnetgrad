@@ -5,7 +5,6 @@ namespace dotnetgrad
 	{
 		public List<ILayer> Layers { get; private set; }
 		public double TrainingRate { get; set; }
-
 		public MultiLayerPerceptron(
 			int numInputs, int numHiddenLayers, int sizeOfHiddenLayers, int numOutputs)
 		{
@@ -16,8 +15,13 @@ namespace dotnetgrad
 			Layers.Add(new Layer(sizeOfHiddenLayers, numOutputs, Activation.Linear));
 			TrainingRate = 0.05;
 		}
+        public MultiLayerPerceptron()
+        {
+            Layers = new List<ILayer>();
+            TrainingRate = 0.05;
+        }
 
-		public List<Value> FeedForward(List<double> inputs)
+        public List<Value> FeedForward(List<double> inputs)
 		{
 			var inputsAsValues = new List<Value>();
 			foreach(double input in inputs)

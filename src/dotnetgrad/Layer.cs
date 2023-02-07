@@ -1,18 +1,23 @@
 ﻿using System;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+
 namespace dotnetgrad
 {
     public class Layer : ILayer
     {
-        public List<Neuron> Neurons { get; private set; }
-        private Activation _activation;
+        public List<Neuron> Neurons { get; set; }
+        public Activation Activation { get; set; }
 
         public Layer(int numInputs, int numOutputs, Activation activation = Activation.TanH)
         {
-            _activation = activation;
+            Activation = activation;
             Neurons = new List<Neuron>();
             for (int i = 0; i < numOutputs; i++)
-                Neurons.Add(new Neuron(numInputs, _activation));
+                Neurons.Add(new Neuron(numInputs, Activation));
         }
+        public Layer()
+        { }
 
         public List<Value> ActivateLayer(List<Value> inputValues)
         {

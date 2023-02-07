@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace dotnetgrad
 {
@@ -7,7 +9,7 @@ namespace dotnetgrad
 	{
 		public double Data { get; set; }
 		public List<Value> Children { get; }
-		public Operation Operation { get; }
+        public Operation Operation { get; }
 		public double Gradient { get; set; }
         private Func<Value, double> _derivative;
 
@@ -23,6 +25,8 @@ namespace dotnetgrad
 			Gradient = gradient;
             _derivative = derivative ?? (child => 1);
 		}
+        //For deserialisation
+        public Value() { }
 
         public Value Add(Value otherValue)
         {

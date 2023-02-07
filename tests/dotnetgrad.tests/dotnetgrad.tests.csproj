@@ -19,4 +19,10 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\dotnetgrad\dotnetgrad.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="models\" />
+  </ItemGroup>
 </Project>

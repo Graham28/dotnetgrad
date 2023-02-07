@@ -1,0 +1,641 @@
+{
+  "Layers": [
+    {
+      "$type": "dotnetgrad.Layer, dotnetgrad",
+      "Neurons": [
+        {
+          "Activation": 1,
+          "Bias": {
+            "Data": 0.11076025370884446,
+            "Children": [],
+            "Operation": 0,
+            "Gradient": 0.0
+          },
+          "Weights": [
+            {
+              "Data": -0.04070531131031574,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 1.634376827821447,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 0.48841511895437995,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            }
+          ],
+          "NumberOfInputValues": 3
+        },
+        {
+          "Activation": 1,
+          "Bias": {
+            "Data": 0.055586199055953855,
+            "Children": [],
+            "Operation": 0,
+            "Gradient": 0.0
+          },
+          "Weights": [
+            {
+              "Data": 0.8594912274884694,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -0.25913170470139035,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 0.4547724963302969,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            }
+          ],
+          "NumberOfInputValues": 3
+        },
+        {
+          "Activation": 1,
+          "Bias": {
+            "Data": -0.0039372554129668245,
+            "Children": [],
+            "Operation": 0,
+            "Gradient": 0.0
+          },
+          "Weights": [
+            {
+              "Data": 1.0193146049514472,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 1.4305100846674779,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 0.33774785192723605,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            }
+          ],
+          "NumberOfInputValues": 3
+        },
+        {
+          "Activation": 1,
+          "Bias": {
+            "Data": 0.08935043877395267,
+            "Children": [],
+            "Operation": 0,
+            "Gradient": 0.0
+          },
+          "Weights": [
+            {
+              "Data": 0.12773582784186757,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -0.7918231999738946,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 0.14041186196065952,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            }
+          ],
+          "NumberOfInputValues": 3
+        },
+        {
+          "Activation": 1,
+          "Bias": {
+            "Data": -0.20644836974593628,
+            "Children": [],
+            "Operation": 0,
+            "Gradient": 0.0
+          },
+          "Weights": [
+            {
+              "Data": 0.5164531698000183,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -1.3935748149410558,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -1.0236447513350795,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            }
+          ],
+          "NumberOfInputValues": 3
+        }
+      ],
+      "Activation": 1
+    },
+    {
+      "$type": "dotnetgrad.Layer, dotnetgrad",
+      "Neurons": [
+        {
+          "Activation": 1,
+          "Bias": {
+            "Data": -0.0034503798934366024,
+            "Children": [],
+            "Operation": 0,
+            "Gradient": 0.0
+          },
+          "Weights": [
+            {
+              "Data": 1.1170216280698226,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -0.22150140713564903,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 1.2151222006158475,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -1.0351993834562527,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -0.12174855430344209,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            }
+          ],
+          "NumberOfInputValues": 5
+        },
+        {
+          "Activation": 1,
+          "Bias": {
+            "Data": 0.0443380299478792,
+            "Children": [],
+            "Operation": 0,
+            "Gradient": 0.0
+          },
+          "Weights": [
+            {
+              "Data": -0.5731714528475064,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 1.1069103239981684,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 0.27537824949194145,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -0.5669673688791523,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -0.9208604383201865,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            }
+          ],
+          "NumberOfInputValues": 5
+        },
+        {
+          "Activation": 1,
+          "Bias": {
+            "Data": -0.010649728762809925,
+            "Children": [],
+            "Operation": 0,
+            "Gradient": 0.0
+          },
+          "Weights": [
+            {
+              "Data": -2.4319464551601064,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -0.6609363151500167,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -0.7563174195883887,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 0.16859972315327001,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 0.7543767966887324,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            }
+          ],
+          "NumberOfInputValues": 5
+        },
+        {
+          "Activation": 1,
+          "Bias": {
+            "Data": -0.18811689975570067,
+            "Children": [],
+            "Operation": 0,
+            "Gradient": 0.0
+          },
+          "Weights": [
+            {
+              "Data": -1.2571851039185178,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 0.017509812590903895,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -0.015425425105918489,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -0.8636126408700842,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 0.8746016890116215,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            }
+          ],
+          "NumberOfInputValues": 5
+        },
+        {
+          "Activation": 1,
+          "Bias": {
+            "Data": 0.00016501564846775632,
+            "Children": [],
+            "Operation": 0,
+            "Gradient": 0.0
+          },
+          "Weights": [
+            {
+              "Data": 1.4797317725524197,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -0.7044338779015645,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 1.2782840820933883,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -0.41856130731023533,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -1.220119808751682,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            }
+          ],
+          "NumberOfInputValues": 5
+        }
+      ],
+      "Activation": 1
+    },
+    {
+      "$type": "dotnetgrad.Layer, dotnetgrad",
+      "Neurons": [
+        {
+          "Activation": 1,
+          "Bias": {
+            "Data": 0.12198735609987377,
+            "Children": [],
+            "Operation": 0,
+            "Gradient": 0.0
+          },
+          "Weights": [
+            {
+              "Data": -0.6899791972257004,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 1.0678148316399796,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -0.6418433542065246,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -1.6521925544047906,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 0.8124355997585025,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            }
+          ],
+          "NumberOfInputValues": 5
+        },
+        {
+          "Activation": 1,
+          "Bias": {
+            "Data": -0.0005698792115615389,
+            "Children": [],
+            "Operation": 0,
+            "Gradient": 0.0
+          },
+          "Weights": [
+            {
+              "Data": 0.4385240114056731,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 0.9139679167748361,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -1.3350010384738316,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 0.04037967041140133,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -0.15954718770751367,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            }
+          ],
+          "NumberOfInputValues": 5
+        },
+        {
+          "Activation": 1,
+          "Bias": {
+            "Data": -0.052734135549441154,
+            "Children": [],
+            "Operation": 0,
+            "Gradient": 0.0
+          },
+          "Weights": [
+            {
+              "Data": 1.0097927868355878,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 1.4937892711830987,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 1.993395915039398,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -0.667571332585108,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 1.9621981686190482,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            }
+          ],
+          "NumberOfInputValues": 5
+        },
+        {
+          "Activation": 1,
+          "Bias": {
+            "Data": -0.041976436521122845,
+            "Children": [],
+            "Operation": 0,
+            "Gradient": 0.0
+          },
+          "Weights": [
+            {
+              "Data": -0.959186732657258,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 0.2878717811938299,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 0.5035823196733573,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 0.1883468976000478,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -0.08921807118894481,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            }
+          ],
+          "NumberOfInputValues": 5
+        },
+        {
+          "Activation": 1,
+          "Bias": {
+            "Data": 0.038621369205795925,
+            "Children": [],
+            "Operation": 0,
+            "Gradient": 0.0
+          },
+          "Weights": [
+            {
+              "Data": -0.4220663694776498,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 0.08708302282359998,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -0.11807566106522739,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -0.4144228699617952,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 0.8077282152444325,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            }
+          ],
+          "NumberOfInputValues": 5
+        }
+      ],
+      "Activation": 1
+    },
+    {
+      "$type": "dotnetgrad.Layer, dotnetgrad",
+      "Neurons": [
+        {
+          "Activation": 0,
+          "Bias": {
+            "Data": 0.21391436683681278,
+            "Children": [],
+            "Operation": 0,
+            "Gradient": 0.0
+          },
+          "Weights": [
+            {
+              "Data": 0.632860873454491,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 0.1745445230105168,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -0.29453816819439105,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": -1.263053601437694,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            },
+            {
+              "Data": 0.2876847198070417,
+              "Children": [],
+              "Operation": 0,
+              "Gradient": 0.0
+            }
+          ],
+          "NumberOfInputValues": 5
+        }
+      ],
+      "Activation": 0
+    }
+  ],
+  "TrainingRate": 0.05
+}
