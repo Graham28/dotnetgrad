@@ -6,26 +6,26 @@
         {
           "Activation": 1,
           "Bias": {
-            "Data": -0.6568205981355127,
+            "Data": -0.05575944597678761,
             "Children": [],
             "Operation": 0,
             "Gradient": 0.0
           },
           "Weights": [
             {
-              "Data": -1.2312643333501299,
+              "Data": 0.6025054143072451,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 0.053229295482416616,
+              "Data": -0.3709512223511803,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.05980428094267609,
+              "Data": 1.276089679359617,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
@@ -36,26 +36,26 @@
         {
           "Activation": 1,
           "Bias": {
-            "Data": -0.33005367038762934,
+            "Data": -0.030319494549853637,
             "Children": [],
             "Operation": 0,
             "Gradient": 0.0
           },
           "Weights": [
             {
-              "Data": -0.7500659170977785,
+              "Data": 1.9031767275325315,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -1.3307292921035465,
+              "Data": 0.30430235584056237,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.1591370984316413,
+              "Data": -1.7022904931788616,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
@@ -66,26 +66,26 @@
         {
           "Activation": 1,
           "Bias": {
-            "Data": 0.006237684104456311,
+            "Data": -0.029829958240097827,
             "Children": [],
             "Operation": 0,
             "Gradient": 0.0
           },
           "Weights": [
             {
-              "Data": 0.5808311831074938,
+              "Data": -1.665677364370524,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 1.7537874260627346,
+              "Data": -1.5526045501564443,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.06682873111782976,
+              "Data": 0.41929344860116763,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
@@ -96,26 +96,26 @@
         {
           "Activation": 1,
           "Bias": {
-            "Data": 0.08459256676255139,
+            "Data": 0.16638664586696802,
             "Children": [],
             "Operation": 0,
             "Gradient": 0.0
           },
           "Weights": [
             {
-              "Data": 0.1217079449289592,
+              "Data": -0.51003845116976,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 0.06977921301646194,
+              "Data": -0.8535376123058999,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.28686518935021377,
+              "Data": -0.07090373796599744,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
@@ -126,26 +126,26 @@
         {
           "Activation": 1,
           "Bias": {
-            "Data": -0.17141394429718346,
+            "Data": 0.008932526188521748,
             "Children": [],
             "Operation": 0,
             "Gradient": 0.0
           },
           "Weights": [
             {
-              "Data": -0.10379314172864601,
+              "Data": 0.7490401192235472,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.3881474570245089,
+              "Data": 1.8846952171694957,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 1.2369241541094844,
+              "Data": -0.8056745067928164,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
@@ -162,38 +162,38 @@
         {
           "Activation": 1,
           "Bias": {
-            "Data": -0.0810634555877958,
+            "Data": -0.15632921134633193,
             "Children": [],
             "Operation": 0,
             "Gradient": 0.0
           },
           "Weights": [
             {
-              "Data": -0.486959032125658,
+              "Data": 0.26056913537444015,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.825148675327094,
+              "Data": -0.548057242683378,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 1.2791583848269406,
+              "Data": 0.39861150203314466,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -1.2679715203850492,
+              "Data": 0.016095501689616626,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 0.7513643153326641,
+              "Data": 0.8220876131303222,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
@@ -204,38 +204,38 @@
         {
           "Activation": 1,
           "Bias": {
-            "Data": 0.1372025654864478,
+            "Data": 3.219447043498993E-05,
             "Children": [],
             "Operation": 0,
             "Gradient": 0.0
           },
           "Weights": [
             {
-              "Data": -0.19994238088727995,
+              "Data": -0.6215439644527164,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.10443008913343897,
+              "Data": 1.4941955371347972,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.09700806638260927,
+              "Data": -1.3313286346984192,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -1.0053099062959734,
+              "Data": -2.947267324922374,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.16930864820364133,
+              "Data": -0.9415888868285218,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
@@ -246,38 +246,38 @@
         {
           "Activation": 1,
           "Bias": {
-            "Data": 0.0027308265365861583,
+            "Data": -0.007524872386938861,
             "Children": [],
             "Operation": 0,
             "Gradient": 0.0
           },
           "Weights": [
             {
-              "Data": 1.500225744804851,
+              "Data": -1.0177842171701843,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.18832398275089948,
+              "Data": -1.4224121443233693,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 0.1731951116268269,
+              "Data": -1.5240108476446974,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 0.38425760336663745,
+              "Data": 0.7049406524816216,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.7657795862529361,
+              "Data": 0.5473873855385443,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
@@ -288,38 +288,38 @@
         {
           "Activation": 1,
           "Bias": {
-            "Data": 0.017969731873559127,
+            "Data": -0.20332322656880408,
             "Children": [],
             "Operation": 0,
             "Gradient": 0.0
           },
           "Weights": [
             {
-              "Data": 0.4710849936347987,
+              "Data": 0.8204966792346371,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 0.8441320696848905,
+              "Data": 1.2891446083787534,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.2824573674947908,
+              "Data": 1.1659935411215059,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.5436424396984574,
+              "Data": -1.4276572451972964,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -1.1357677461791904,
+              "Data": -1.7845850173003177,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
@@ -330,38 +330,38 @@
         {
           "Activation": 1,
           "Bias": {
-            "Data": 0.45718912664871714,
+            "Data": 0.001355978593563032,
             "Children": [],
             "Operation": 0,
             "Gradient": 0.0
           },
           "Weights": [
             {
-              "Data": -2.0315322438097843,
+              "Data": 0.6799704758691898,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -1.5159720037496842,
+              "Data": 1.3728252532496719,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 0.8064226448086425,
+              "Data": 1.3281245186632167,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 0.3741594929627499,
+              "Data": 0.4491738784560604,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -1.0369823455266896,
+              "Data": -1.088936589079623,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
@@ -378,38 +378,38 @@
         {
           "Activation": 1,
           "Bias": {
-            "Data": -0.02039271381412767,
+            "Data": -0.0005551548442481414,
             "Children": [],
             "Operation": 0,
             "Gradient": 0.0
           },
           "Weights": [
             {
-              "Data": 1.1730330106758358,
+              "Data": -1.7919156196835355,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -1.2808188941009788,
+              "Data": -1.189280808610269,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 0.16334333025924647,
+              "Data": -0.3703326825316956,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 1.3211023586002582,
+              "Data": -0.3904777976432628,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 0.07040356882766864,
+              "Data": 0.6566267805452711,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
@@ -420,38 +420,38 @@
         {
           "Activation": 1,
           "Bias": {
-            "Data": 0.02745486561644782,
+            "Data": 0.2031693131737934,
             "Children": [],
             "Operation": 0,
             "Gradient": 0.0
           },
           "Weights": [
             {
-              "Data": -0.7750194068696528,
+              "Data": -0.41173083902836743,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.7364347610456873,
+              "Data": 0.5807958911725947,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.5461227694557714,
+              "Data": -0.29770760261489837,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 0.3814407263569184,
+              "Data": -1.4026077332897278,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 0.005325056441113172,
+              "Data": -0.037245026960820216,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
@@ -462,38 +462,38 @@
         {
           "Activation": 1,
           "Bias": {
-            "Data": -0.12543736083079624,
+            "Data": 0.023063642670654295,
             "Children": [],
             "Operation": 0,
             "Gradient": 0.0
           },
           "Weights": [
             {
-              "Data": 2.0084647125143134,
+              "Data": -0.017521830118876043,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 0.5395544489995947,
+              "Data": 0.2422706520877568,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.6000542337282853,
+              "Data": 0.5839863301243186,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 1.213847724069414,
+              "Data": -0.8208814062791352,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -1.316767635779065,
+              "Data": -0.26930908755916244,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
@@ -504,38 +504,38 @@
         {
           "Activation": 1,
           "Bias": {
-            "Data": 0.013953680864954458,
+            "Data": 0.015325347446598329,
             "Children": [],
             "Operation": 0,
             "Gradient": 0.0
           },
           "Weights": [
             {
-              "Data": -1.5857474023704214,
+              "Data": -1.1866763994026766,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 0.8207935301144106,
+              "Data": 2.2627003430941435,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.8144499558144715,
+              "Data": 0.058862589047945856,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 0.8112931152484429,
+              "Data": 0.43444006269611685,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.10414585042418488,
+              "Data": 0.06699980160581255,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
@@ -546,38 +546,38 @@
         {
           "Activation": 1,
           "Bias": {
-            "Data": -0.18301658842147425,
+            "Data": -0.04235434496308066,
             "Children": [],
             "Operation": 0,
             "Gradient": 0.0
           },
           "Weights": [
             {
-              "Data": -1.2001283249215562,
+              "Data": 1.3342496702342574,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -1.0906958852360382,
+              "Data": 1.7320499094703685,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.16325765291090266,
+              "Data": -1.455529182902697,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -1.0410540384233709,
+              "Data": -0.4736546187249252,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -1.817060572502915,
+              "Data": 0.32082868166775713,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
@@ -594,38 +594,38 @@
         {
           "Activation": 0,
           "Bias": {
-            "Data": 0.37618441018819054,
+            "Data": 0.21328693598388085,
             "Children": [],
             "Operation": 0,
             "Gradient": 0.0
           },
           "Weights": [
             {
-              "Data": -0.2309895503405454,
+              "Data": -0.2944436956294178,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.10013337119574443,
+              "Data": 1.1520399187349015,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -0.2809024662828806,
+              "Data": 0.560183538245925,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": 0.11284497765915519,
+              "Data": 0.7328150144698983,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0
             },
             {
-              "Data": -1.1387592487189986,
+              "Data": -0.3479174607418528,
               "Children": [],
               "Operation": 0,
               "Gradient": 0.0

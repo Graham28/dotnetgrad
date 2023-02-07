@@ -9,9 +9,15 @@
   <ItemGroup>
     <None Remove="Utilities\" />
     <None Remove="Newtonsoft.Json" />
+    <None Remove="Components\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Types\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Utilities\" />
+    <Folder Include="Components\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Types\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
