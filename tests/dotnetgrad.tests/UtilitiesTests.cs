@@ -41,6 +41,25 @@ namespace dotnetgrad.tests
             var output2 = mlpFromFullPath.FeedForward(input1);
             Assert.That(output2.First().Data, Is.EqualTo(output.First().Data).Within(0.0001));
         }
+
+        [Test]
+        public void UtilitiesTests_SaveModelAsJson_ThenRetreiveModelFromFile_WithSoftmax()
+        {
+            //Arrange
+            var input1 = new List<double>() { 0.1, 0.8, -0.7 };
+            var mlp = new MultiLayerPerceptron(3, 3, 5, 2);
+            mlp.Layers.Add(new SoftmaxLayer());
+            mlp.TrainBatch(new List<DataPoint>() { new DataPoint(input1, new List<double>() { 1.0, 0.0 }) });
+            var output = mlp.FeedForward(input1);
+            var pathToFile = SavingAndRetreiving.SaveModelAsJson(mlp, "test2");
+
+            //Act
+            var mlpFromFullPath = SavingAndRetreiving.GetModelFromJsonFile(pathToFile);
+
+            //Assert
+            var output2 = mlpFromFullPath.FeedForward(input1);
+            Assert.That(output2.First().Data, Is.EqualTo(output.First().Data).Within(0.0001));
+        }
     }
 }
 
